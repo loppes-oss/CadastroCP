@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons.png" />
+    <title>ServicesDevs</title>
+  </head>
+
+  <body>
+    <form class="container border border-warning align-items-center conteudos">
+      <section class="d-flex-center">
+        <div class="row abas" >
+          <div
+            class=" ativa btn btn-light col-sm border border-warning"
+            data-aba="entar"
+          >
+            Entrar
+          </div>
+          <div
+            class="btn btn-light col-sm border border-warning"
+            data-aba="cadastrar"
+          >
+            Cadastrar
+          </div>
+        </div>
+        
+        <div class="conteudos">
+          <div class="mt-1 p-2 " data-conteudo="entrar">
+            <div>
+              <form class="form">
+                <input
+                  class=" w-100 border border-warning"
+                  type="email"
+                  name="Email"
+                  placeholder="Seu Email"
+                />
+                <input
+                  class="w-100 border border-warning"
+                  type="password"
+                  name="Senha"
+                  placeholder="Sua Senha"
+                />
+                <input
+                  class="w-100 btn btn-warning border boder-warning text-light"
+                  type="submit"
+                  value="Entrar"
+                />
+              </form>
+            </div>
+          </div>
+
+          <div class="mt-1 p-2 hide " data-conteudo="cadastrar">
+            <form>
+              <input
+                class="w-100 border border-warning"
+                type="email"
+                name="Email"
+                placeholder="Seu Email"
+              />
+              <input
+                class="w-100 border border-warning"
+                type="password"
+                name="Senha"
+                placeholder="Sua Senha"
+              />
+              <input
+                class="w-100 border border-warning"
+                type="password"
+                name="Senha"
+                placeholder="Repita sua Senha"
+              />
+              <input
+                class="w-100 btn btn-warning border boder-warning text-light"
+                type="submit"
+                value="Cadastrar"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
